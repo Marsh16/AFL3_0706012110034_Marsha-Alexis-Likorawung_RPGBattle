@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//untuk aplikasi saat mulai di run
 @main
 struct AFL3_0706012110034_Marsha_Alexis_Likorawung_RPGBattleApp: App {
     var body: some Scene {

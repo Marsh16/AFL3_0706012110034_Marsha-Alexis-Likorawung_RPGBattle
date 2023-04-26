@@ -7,18 +7,25 @@
 
 import SwiftUI
 
+//tampilan awal saat baru di run
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack {
+                ZStack(alignment: .center){
+                    Image("bg").resizable()
+                    Text("Warrior Frontier").font(.system(size: 64,weight: .heavy, design: .rounded)).offset(x: -0, y: -200).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
+                    NavigationLink(destination: JourneyScreenView()){
+                        Image("Play").shadow(radius: 10)
+                    }
+                }
+            }
         }
-        .padding()
     }
+    
 }
 
+//menampilkan content view preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

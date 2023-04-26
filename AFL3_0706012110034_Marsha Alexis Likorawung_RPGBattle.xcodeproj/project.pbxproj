@@ -11,6 +11,24 @@
 		06D0C3E229F96B1300ACF42D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3E129F96B1300ACF42D /* ContentView.swift */; };
 		06D0C3E429F96B1500ACF42D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D0C3E329F96B1500ACF42D /* Assets.xcassets */; };
 		06D0C3E729F96B1500ACF42D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06D0C3E629F96B1500ACF42D /* Preview Assets.xcassets */; };
+		06D0C3F029F96B7900ACF42D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3EF29F96B7900ACF42D /* Player.swift */; };
+		06D0C3F229F96B8300ACF42D /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3F129F96B8300ACF42D /* Enemy.swift */; };
+		06D0C3F429F96B8C00ACF42D /* Golem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3F329F96B8B00ACF42D /* Golem.swift */; };
+		06D0C3F629F96B9700ACF42D /* Troll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3F529F96B9700ACF42D /* Troll.swift */; };
+		06D0C3F829F9747800ACF42D /* JourneyScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C3F729F9747800ACF42D /* JourneyScreenView.swift */; };
+		06D0C40C29F9790B00ACF42D /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C40B29F9790B00ACF42D /* MainMenuView.swift */; };
+		06D0C40F29F979E100ACF42D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C40E29F979E100ACF42D /* Const.swift */; };
+		06D0C41129F97EFE00ACF42D /* CheckHealthStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41029F97EFE00ACF42D /* CheckHealthStatsView.swift */; };
+		06D0C41329F980C900ACF42D /* HealWoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41229F980C900ACF42D /* HealWoundView.swift */; };
+		06D0C41529F980DA00ACF42D /* UseElixerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41429F980DA00ACF42D /* UseElixerView.swift */; };
+		06D0C41729F980EC00ACF42D /* ForestOfTrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41629F980EC00ACF42D /* ForestOfTrollView.swift */; };
+		06D0C41929F980FB00ACF42D /* MountainOfGolemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41829F980FB00ACF42D /* MountainOfGolemView.swift */; };
+		06D0C41F29F99CA000ACF42D /* ProtocolGolem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41B29F99C9F00ACF42D /* ProtocolGolem.swift */; };
+		06D0C42029F99CA000ACF42D /* ProtocolEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41C29F99C9F00ACF42D /* ProtocolEnemy.swift */; };
+		06D0C42129F99CA000ACF42D /* ProtocolPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41D29F99C9F00ACF42D /* ProtocolPlayer.swift */; };
+		06D0C42229F99CA000ACF42D /* ProtocolTroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41E29F99C9F00ACF42D /* ProtocolTroll.swift */; };
+		06D0C42429F9AC4700ACF42D /* PlayerStatsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */; };
+		06D0C42629F9AC5A00ACF42D /* FleeFromBattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,24 @@
 		06D0C3E129F96B1300ACF42D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06D0C3E329F96B1500ACF42D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06D0C3E629F96B1500ACF42D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06D0C3EF29F96B7900ACF42D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		06D0C3F129F96B8300ACF42D /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		06D0C3F329F96B8B00ACF42D /* Golem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golem.swift; sourceTree = "<group>"; };
+		06D0C3F529F96B9700ACF42D /* Troll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Troll.swift; sourceTree = "<group>"; };
+		06D0C3F729F9747800ACF42D /* JourneyScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyScreenView.swift; sourceTree = "<group>"; };
+		06D0C40B29F9790B00ACF42D /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		06D0C40E29F979E100ACF42D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		06D0C41029F97EFE00ACF42D /* CheckHealthStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHealthStatsView.swift; sourceTree = "<group>"; };
+		06D0C41229F980C900ACF42D /* HealWoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealWoundView.swift; sourceTree = "<group>"; };
+		06D0C41429F980DA00ACF42D /* UseElixerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseElixerView.swift; sourceTree = "<group>"; };
+		06D0C41629F980EC00ACF42D /* ForestOfTrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestOfTrollView.swift; sourceTree = "<group>"; };
+		06D0C41829F980FB00ACF42D /* MountainOfGolemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainOfGolemView.swift; sourceTree = "<group>"; };
+		06D0C41B29F99C9F00ACF42D /* ProtocolGolem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolGolem.swift; sourceTree = "<group>"; };
+		06D0C41C29F99C9F00ACF42D /* ProtocolEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolEnemy.swift; sourceTree = "<group>"; };
+		06D0C41D29F99C9F00ACF42D /* ProtocolPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayer.swift; sourceTree = "<group>"; };
+		06D0C41E29F99C9F00ACF42D /* ProtocolTroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTroll.swift; sourceTree = "<group>"; };
+		06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsScreenView.swift; sourceTree = "<group>"; };
+		06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleeFromBattleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +87,10 @@
 		06D0C3DE29F96B1300ACF42D /* AFL3_0706012110034_Marsha Alexis Likorawung_RPGBattle */ = {
 			isa = PBXGroup;
 			children = (
+				06D0C41A29F99C9F00ACF42D /* Protocol */,
+				06D0C40D29F979CE00ACF42D /* Helper */,
+				06D0C3EE29F96B5300ACF42D /* Views */,
+				06D0C3ED29F96B4B00ACF42D /* Model */,
 				06D0C3DF29F96B1300ACF42D /* AFL3_0706012110034_Marsha_Alexis_Likorawung_RPGBattleApp.swift */,
 				06D0C3E129F96B1300ACF42D /* ContentView.swift */,
 				06D0C3E329F96B1500ACF42D /* Assets.xcassets */,
@@ -65,6 +105,52 @@
 				06D0C3E629F96B1500ACF42D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06D0C3ED29F96B4B00ACF42D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				06D0C3EF29F96B7900ACF42D /* Player.swift */,
+				06D0C3F129F96B8300ACF42D /* Enemy.swift */,
+				06D0C3F329F96B8B00ACF42D /* Golem.swift */,
+				06D0C3F529F96B9700ACF42D /* Troll.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		06D0C3EE29F96B5300ACF42D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06D0C3F729F9747800ACF42D /* JourneyScreenView.swift */,
+				06D0C40B29F9790B00ACF42D /* MainMenuView.swift */,
+				06D0C41029F97EFE00ACF42D /* CheckHealthStatsView.swift */,
+				06D0C41229F980C900ACF42D /* HealWoundView.swift */,
+				06D0C41429F980DA00ACF42D /* UseElixerView.swift */,
+				06D0C41629F980EC00ACF42D /* ForestOfTrollView.swift */,
+				06D0C41829F980FB00ACF42D /* MountainOfGolemView.swift */,
+				06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */,
+				06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06D0C40D29F979CE00ACF42D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				06D0C40E29F979E100ACF42D /* Const.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		06D0C41A29F99C9F00ACF42D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				06D0C41B29F99C9F00ACF42D /* ProtocolGolem.swift */,
+				06D0C41C29F99C9F00ACF42D /* ProtocolEnemy.swift */,
+				06D0C41D29F99C9F00ACF42D /* ProtocolPlayer.swift */,
+				06D0C41E29F99C9F00ACF42D /* ProtocolTroll.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +223,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D0C3F829F9747800ACF42D /* JourneyScreenView.swift in Sources */,
+				06D0C3F429F96B8C00ACF42D /* Golem.swift in Sources */,
+				06D0C3F229F96B8300ACF42D /* Enemy.swift in Sources */,
+				06D0C42229F99CA000ACF42D /* ProtocolTroll.swift in Sources */,
+				06D0C41129F97EFE00ACF42D /* CheckHealthStatsView.swift in Sources */,
 				06D0C3E229F96B1300ACF42D /* ContentView.swift in Sources */,
+				06D0C41929F980FB00ACF42D /* MountainOfGolemView.swift in Sources */,
+				06D0C40C29F9790B00ACF42D /* MainMenuView.swift in Sources */,
+				06D0C3F029F96B7900ACF42D /* Player.swift in Sources */,
+				06D0C42429F9AC4700ACF42D /* PlayerStatsScreenView.swift in Sources */,
+				06D0C42629F9AC5A00ACF42D /* FleeFromBattleView.swift in Sources */,
+				06D0C42129F99CA000ACF42D /* ProtocolPlayer.swift in Sources */,
+				06D0C41F29F99CA000ACF42D /* ProtocolGolem.swift in Sources */,
+				06D0C41729F980EC00ACF42D /* ForestOfTrollView.swift in Sources */,
 				06D0C3E029F96B1300ACF42D /* AFL3_0706012110034_Marsha_Alexis_Likorawung_RPGBattleApp.swift in Sources */,
+				06D0C3F629F96B9700ACF42D /* Troll.swift in Sources */,
+				06D0C40F29F979E100ACF42D /* Const.swift in Sources */,
+				06D0C41329F980C900ACF42D /* HealWoundView.swift in Sources */,
+				06D0C42029F99CA000ACF42D /* ProtocolEnemy.swift in Sources */,
+				06D0C41529F980DA00ACF42D /* UseElixerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
