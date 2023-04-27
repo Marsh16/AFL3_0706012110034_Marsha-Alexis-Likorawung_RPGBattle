@@ -20,13 +20,13 @@ struct FleeFromBattleView: View {
                         VStack{
                             Text("You feel that if you don't escape soon, you won't be able to continue the fight.\nYou look around frantically, searching for a way out. You sprint towards the exit, your heart pounding in your chest.\n \nYou're safe, for now.\n").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
                             Button("Play Again"){
-                                Const.newGame()
                                 showingAlert = true
                             }.buttonStyle(.bordered).tint(.white).font(.system(size: 16,weight: .heavy, design: .rounded)) .alert(isPresented:$showingAlert) {
                                 Alert(
                                     title: Text("Play Again?"),
                                     message: Text("There is no undo"),
                                     primaryButton: .destructive(Text("Yes")) {
+                                        Const.newGame()
                                         showingView = true
                                     },
                                     secondaryButton: .cancel()

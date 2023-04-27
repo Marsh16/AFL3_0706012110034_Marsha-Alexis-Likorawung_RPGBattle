@@ -17,7 +17,7 @@ struct CheckHealthStatsView: View {
                         Image("bg").resizable()
                         VStack{
                             Text("Your Name \(Const.player.name)!\nYour HP \(Const.player.hp)!\nYour Potion \(Const.player.potion)!\nYour Mana \(Const.player.mana)!\nYour Elixer \(Const.player.elixer)!\n\n").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
-                            Text("Magic:\n- Physical Attack. No mana required. Deal 5pt of damage.\n- Meteor. Use 15pt of MP. Deal 50pt of damage.\n- Shield. Use 15pt of MP. Block enemy's attack in 1 turn.\n\nItems:\n- Potion x20. Heal 20pt of your HP.\n- Elixir x5. Add 10pt of your MP.").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
+                            Text("Magic:\n- Physical Attack. Use 15pt of MP. Deal 5pt of damage.\n- Meteor. Use 15pt of MP. Deal 50pt of damage.\n- Shield. Use 15pt of MP. Block enemy's attack in 1 turn.\n\nItems:\n- Potion x20. Heal 20pt of your HP.\n- Elixir x5. Add 10pt of your MP.").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
                             Spacer()
                         }.padding(.top).padding()
                     }

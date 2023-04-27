@@ -32,7 +32,7 @@ struct ForestOfTrollView: View {
                                         Text("Choose your action:").padding().font(.system(size: 16,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
                                     }
                                     Group{
-                                        Button("Physical Attack. No mana required. Deal 5pt of damage."){
+                                        Button("Physical Attack. Use 15pt of MP. Deal 5pt of damage."){
                                             let result =  Const.player.PhysicalAttack(troll1)
                                             let damage = result.damage
                                             let alert = result.showingAlert

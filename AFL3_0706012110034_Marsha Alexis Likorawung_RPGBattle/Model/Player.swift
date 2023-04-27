@@ -59,21 +59,29 @@ class Player: ProtocolPlayer{
         }
         else{
             mana-=15
-            return (false,"")
+            return (true,"You are protected by the Shield spell casted before, only for this turn.\nYour HP is still: \(hp)\nYou are now invincible for 1 turn.")
         }
     }
     
     //untuk player melakukan physical attack, damagenya 5 dan tidak memakai mana
     func PhysicalAttack(_ enemy: Enemy) -> (damage:Int,showingAlert: Bool,condition: String) {
         let hpbaru = enemy.enemyHp - 5
-        if(hpbaru<0){
+        let mpbaru = mana-15
+        if(mpbaru<0){
+            return (0,true,"mana empty")
+        }
+        else if(hpbaru<0){
             enemy.enemyHp = 0
             return (0,true,"enemy dead")
         }else if(enemy.enemyHp==0){
             return (0,true,"enemy dead")
         }else if(hp == 0){
             return (0,true,"You are dead, you lose")
-        }else{
+        }else if(mana == 0){
+            return (0,true,"mana empty")
+        }
+        else{
+            mana =  mana - 15
             enemy.enemyHp = enemy.enemyHp - 5
             return (5,false,"")
         }
