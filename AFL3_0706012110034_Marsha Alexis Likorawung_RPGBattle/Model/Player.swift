@@ -33,6 +33,8 @@ class Player: ProtocolPlayer{
             return (0,true,"mana empty")
         }else if(enemy.enemyHp==0){
             return (0,true,"enemy dead")
+        }else if(hp == 0){
+            return (0,true,"You are dead, you lose")
         }else{
             if(hpbaru<0){
                 enemy.enemyHp = 0
@@ -40,21 +42,24 @@ class Player: ProtocolPlayer{
             }else{
                 mana =  mana - 15
                 enemy.enemyHp = enemy.enemyHp - 50
-                return (50,false,"still alive")
+                return (50,false,"")
             }
         }
     }
     
-    //untuk player mengaktifkan shield, yang terjadi: mana berkurang 10 point dan enemy tidak bisa attack anda
+    //untuk player mengaktifkan shield, yang terjadi: mana berkurang 15 point dan enemy tidak bisa attack anda
     func Shield(_ enemy: Enemy) -> (showingAlert: Bool,condition: String){
-        let mpbaru = mana-10
+        let mpbaru = mana-15
         if(mpbaru<0){
             return (true,"mana empty")
         }else if(enemy.enemyHp==0){
             return (true,"enemy dead")
-        }else{
-            mana-=10
-            return (false,"still alive")
+        }else if(hp == 0){
+            return (true,"You are dead, you lose")
+        }
+        else{
+            mana-=15
+            return (false,"")
         }
     }
     
@@ -66,9 +71,11 @@ class Player: ProtocolPlayer{
             return (0,true,"enemy dead")
         }else if(enemy.enemyHp==0){
             return (0,true,"enemy dead")
+        }else if(hp == 0){
+            return (0,true,"You are dead, you lose")
         }else{
             enemy.enemyHp = enemy.enemyHp - 5
-            return (5,false,"still alive")
+            return (5,false,"")
         }
     }
     
@@ -84,7 +91,7 @@ class Player: ProtocolPlayer{
         }else{
             elixer = elixer - 1
             mana = mana + 15
-            return (false,"still alive")
+            return (false,"")
         }
     }
     
@@ -101,11 +108,11 @@ class Player: ProtocolPlayer{
                 let sisa = hpbaru-100
                 potion-=1
                 hp = hp + 20 - sisa
-                return (false,"still alive")
+                return (false,"")
             }else{
                 potion-=1
                 hp+=20
-                return (false,"still alive")
+                return (false,"")
             }
         }
     }
@@ -121,14 +128,13 @@ class Player: ProtocolPlayer{
             for troll in enemy {
                 if golem is Golem && troll is Troll{
                     if( golem.enemyHp == 0 && troll.enemyHp == 0){
-                        return (true,"You Win")
+                        return (true,"You Win, Play Again?")
                     }else{
-                        return (false,"Not Yet")
+                        return (false,"")
                     }
                 }
             }
         }
-        return (false,"Not Yet")
+        return (false,"")
     }
-    
 }

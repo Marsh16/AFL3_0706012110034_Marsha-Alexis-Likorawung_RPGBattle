@@ -10,6 +10,6 @@ import Foundation
 //untuk protokol player
 protocol ProtocolTroll{
     
-    func TrollShield(_ damage: Int)
-    
+    func TrollShield(_ player: Player, _ damage: Int) -> (showingAlert: Bool, condition: String)
+
 }

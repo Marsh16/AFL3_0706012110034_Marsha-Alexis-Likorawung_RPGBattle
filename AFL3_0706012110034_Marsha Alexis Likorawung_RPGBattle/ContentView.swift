@@ -20,9 +20,8 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
-    
 }
 
 //menampilkan content view preview

@@ -10,6 +10,6 @@ import Foundation
 //untuk protokol golem
 protocol ProtocolGolem{
     
-    func GolemPunch(_ player: Player)-> Bool
+    func GolemPunch(_ player: Player)->(showingAlert: Bool, condition: String) 
     
 }

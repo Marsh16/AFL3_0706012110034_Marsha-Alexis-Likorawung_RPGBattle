@@ -10,6 +10,6 @@ import Foundation
 //untuk protokol enemy
 protocol ProtocolEnemy{
     
-    func EnemyAttack(_ player: Player)->Bool
+    func EnemyAttack(_ player: Player) ->(showingAlert: Bool, condition: String) 
     
 }

@@ -14,7 +14,23 @@ class Troll: Enemy,ProtocolTroll {
     }
     
     //untuk troll shield
-    func TrollShield(_ damage: Int){
-        enemyHp = enemyHp + damage
+    func TrollShield(_ player: Player, _ damage: Int)->(showingAlert: Bool, condition: String) {
+        let mpbaru = player.mana-15
+        if(mpbaru<0){
+            return (true,"mana empty")
+        }
+        else if(player.hp == 0){
+            return (true,"You are dead, you lose")
+        }
+        else if(player.mana == 0){
+            return (true,"mana empty")
+        }
+        else if(enemyHp == 0){
+            return (true,"enemy dead")
+        }else{
+            enemyHp = enemyHp + damage
+            return (true, "The \(enemyName) uses their SHIELD and regain their HP from you Attack. \n**HP+ HP+ HP+** 🛡️🛡️\nThe \(enemyName) HP RETURNS TO \(enemyHp)")
+        }
+        
     }
 }

@@ -27,8 +27,9 @@
 		06D0C42029F99CA000ACF42D /* ProtocolEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41C29F99C9F00ACF42D /* ProtocolEnemy.swift */; };
 		06D0C42129F99CA000ACF42D /* ProtocolPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41D29F99C9F00ACF42D /* ProtocolPlayer.swift */; };
 		06D0C42229F99CA000ACF42D /* ProtocolTroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C41E29F99C9F00ACF42D /* ProtocolTroll.swift */; };
-		06D0C42429F9AC4700ACF42D /* PlayerStatsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */; };
 		06D0C42629F9AC5A00ACF42D /* FleeFromBattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */; };
+		06D0C42829FA100700ACF42D /* ReloadViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42729FA100700ACF42D /* ReloadViewHelper.swift */; };
+		06D0C42E29FA143700ACF42D /* EnemyVitalScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D0C42D29FA143700ACF42D /* EnemyVitalScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +54,9 @@
 		06D0C41C29F99C9F00ACF42D /* ProtocolEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolEnemy.swift; sourceTree = "<group>"; };
 		06D0C41D29F99C9F00ACF42D /* ProtocolPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlayer.swift; sourceTree = "<group>"; };
 		06D0C41E29F99C9F00ACF42D /* ProtocolTroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolTroll.swift; sourceTree = "<group>"; };
-		06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsScreenView.swift; sourceTree = "<group>"; };
 		06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleeFromBattleView.swift; sourceTree = "<group>"; };
+		06D0C42729FA100700ACF42D /* ReloadViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadViewHelper.swift; sourceTree = "<group>"; };
+		06D0C42D29FA143700ACF42D /* EnemyVitalScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyVitalScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +130,8 @@
 				06D0C41429F980DA00ACF42D /* UseElixerView.swift */,
 				06D0C41629F980EC00ACF42D /* ForestOfTrollView.swift */,
 				06D0C41829F980FB00ACF42D /* MountainOfGolemView.swift */,
-				06D0C42329F9AC4700ACF42D /* PlayerStatsScreenView.swift */,
 				06D0C42529F9AC5A00ACF42D /* FleeFromBattleView.swift */,
+				06D0C42D29FA143700ACF42D /* EnemyVitalScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				06D0C40E29F979E100ACF42D /* Const.swift */,
+				06D0C42729FA100700ACF42D /* ReloadViewHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -228,11 +231,11 @@
 				06D0C3F229F96B8300ACF42D /* Enemy.swift in Sources */,
 				06D0C42229F99CA000ACF42D /* ProtocolTroll.swift in Sources */,
 				06D0C41129F97EFE00ACF42D /* CheckHealthStatsView.swift in Sources */,
+				06D0C42829FA100700ACF42D /* ReloadViewHelper.swift in Sources */,
 				06D0C3E229F96B1300ACF42D /* ContentView.swift in Sources */,
 				06D0C41929F980FB00ACF42D /* MountainOfGolemView.swift in Sources */,
 				06D0C40C29F9790B00ACF42D /* MainMenuView.swift in Sources */,
 				06D0C3F029F96B7900ACF42D /* Player.swift in Sources */,
-				06D0C42429F9AC4700ACF42D /* PlayerStatsScreenView.swift in Sources */,
 				06D0C42629F9AC5A00ACF42D /* FleeFromBattleView.swift in Sources */,
 				06D0C42129F99CA000ACF42D /* ProtocolPlayer.swift in Sources */,
 				06D0C41F29F99CA000ACF42D /* ProtocolGolem.swift in Sources */,
@@ -242,6 +245,7 @@
 				06D0C40F29F979E100ACF42D /* Const.swift in Sources */,
 				06D0C41329F980C900ACF42D /* HealWoundView.swift in Sources */,
 				06D0C42029F99CA000ACF42D /* ProtocolEnemy.swift in Sources */,
+				06D0C42E29FA143700ACF42D /* EnemyVitalScreenView.swift in Sources */,
 				06D0C41529F980DA00ACF42D /* UseElixerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

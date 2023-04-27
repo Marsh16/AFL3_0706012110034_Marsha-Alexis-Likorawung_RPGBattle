@@ -7,21 +7,47 @@
 
 import SwiftUI
 
+//untuk melihat tampilan use elixer
 struct UseElixerView: View {
+    @ObservedObject var reloadViewHelper = ReloadViewHelper()
+    @State private var showingAlert = false
+    @State private var condition = ""
     var body: some View {
-        NavigationStack{
-            VStack{
-                Text("Nice to meet you \(Const.player.name)!")
-                Text("Your HP \(Const.player.hp)!")
-                Text("Your HP \(Const.player.potion)!")
-                Text("Your HP \(Const.player.mana)!")
-                Text("Your HP \(Const.player.elixer)!")
-                Spacer()
+        ScrollView{
+            NavigationStack{
+                VStack {
+                    ZStack(alignment: .center){
+                        Image("bg").resizable()
+                        VStack{
+                            Text("Your Mana is \(Const.player.mana)!\nYour Elixer is \(Const.player.elixer)!\n").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
+                            Text("Are you sure want to use 1 Elixer to add Mana?").padding().font(.system(size: 18,weight: .heavy, design: .rounded)).foregroundColor(.white).shadow(radius: 20) .multilineTextAlignment(.center)
+                            Button("Yes"){
+                                let result =  Const.player.UseElixer()
+                                let alert = result.showingAlert
+                                let conditions = result.condition
+                                showingAlert = alert
+                                condition = conditions
+                                reloadViewHelper.reloadView()
+                            }.buttonStyle(.bordered).tint(.white).font(.system(size: 16,weight: .heavy, design: .rounded)) .alert(isPresented:$showingAlert) {
+                                Alert(
+                                    title: Text(condition),
+                                    message: Text("There is no undo"),
+                                    primaryButton: .destructive(Text("Yes")) {
+                                        
+                                    },
+                                    secondaryButton: .cancel()
+                                )
+                            }
+                            Spacer()
+                        }.padding(.top).padding()
+                    }
+                }
             }
         }
     }
 }
 
+//untuk melihat tampilan use elixer preview
 struct UseElixerView_Previews: PreviewProvider {
     static var previews: some View {
         UseElixerView()
